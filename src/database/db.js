@@ -8,7 +8,7 @@ let db;
 
 try {
     await mongoClient.connect();
-    db = mongoClient.db("ecommerce");
+    db = mongoClient.db("Rebuildit");
     } catch {
     console.log("Erro na conexão com o servidor");
     }
