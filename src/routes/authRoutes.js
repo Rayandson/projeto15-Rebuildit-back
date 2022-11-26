@@ -8,5 +8,5 @@ const router = Router()
 router.post("/sign-up",signUpSchema, signUp)
 
 router.post("/sign-in", signInSchema, signIn)
-
+ 
 export default router;
