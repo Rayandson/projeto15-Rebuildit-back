@@ -1,5 +1,6 @@
-export async function getProducts(req, res){
+import { productsCollection } from "../database/db.js";
 
+export async function getProducts(req, res){
     try {
         const renderProducts= await productsCollection.find({}).toArray()
         res.send(renderProducts)
