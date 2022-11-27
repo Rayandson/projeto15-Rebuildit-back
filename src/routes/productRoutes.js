@@ -3,6 +3,5 @@ import { getProducts } from "../controllers/store.controllers.js";
 
 const router = Router()
 
-router.get("/store", getProducts)
- 
+router.get("/products", getProducts)
 export default router;
