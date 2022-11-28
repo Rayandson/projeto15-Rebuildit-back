@@ -1,10 +1,13 @@
 import { Router } from "express";
-import { getProducts } from "../controllers/store.controllers.js";
-import { validateToken } from "../middlewares/validateTokenMiddleware.js";
+import { getProducts, postPurchases } from "../controllers/store.controllers.js";
+import {validateToken} from "../middlewares/validateTokenMiddleware.js";
+
 
 const router = Router()
 
 router.use(validateToken)
 
 router.get("/products", getProducts)
+
+router.post("/purchases", validateToken, postPurchases)
 export default router;
