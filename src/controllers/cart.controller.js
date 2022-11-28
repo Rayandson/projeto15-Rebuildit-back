@@ -1,6 +1,7 @@
 import { cartCollection } from "../database/db.js";
 export async function InserttoCart(req, res){
     const item = req.body
+    const user = res.locals.user
     try {
         await cartCollection.insertOne(item)
         res.send(200).status({message:"Item adicionado ao Carrinho com sucesso!"})
