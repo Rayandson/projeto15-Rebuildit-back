@@ -4,6 +4,6 @@ import { cartSchemaValidation } from "../middlewares/cartValidation.Middleware.j
 
 const router = Router()
 
-/* router.get("/cart",) */
-router.post("/cart", cartSchemaValidation, InserttoCart)
+router.post("/cart", cartSchemaValidation, InserttoCart);
+
 export default router;
