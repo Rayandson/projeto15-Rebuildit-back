@@ -17,3 +17,4 @@ try {
     export const sessionsCollection = db.collection("sessions")
     export const productsCollection = db.collection("products")
     export const purchasesCollection = db.collection("purchases")
+
