@@ -4,8 +4,8 @@ export async function InserttoCart(req, res){
     try {
         await cartCollection.insertOne(item)
         res.send(200).status({message:"Item adicionado ao Carrinho com sucesso!"})
+        return
     } catch (err) {
-        const errors = err.details.map ((detail)=> detail.message);
-        return res.status(400).send(errors);
+        return res.sendStatus(500)
     }
 }
