@@ -1,4 +1,3 @@
-// import { usersCollection, sessionsCollection } from "../database/db.js"
 import { usersCollection, sessionsCollection } from "../database/db.js"; 
 import bcrypt from "bcrypt";
 import { v4 as uuid } from 'uuid';
